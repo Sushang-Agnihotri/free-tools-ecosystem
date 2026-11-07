@@ -9,8 +9,8 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 | 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
 | 02 | QuickSkip (YouTube Sponsor Skipper) | P0 | **Published** | [quickskip-youtube](https://github.com/Sushang-Agnihotri/quickskip-youtube) | [v1.0.0](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0) |
 | 03 | Tabwise (Smart Tab Manager) | P1 | **Published** | [tabwise](https://github.com/Sushang-Agnihotri/tabwise) | [v1.0.0](https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0) |
-| 04 | Universal Clipboard Manager | P1 | Research (next) | — | — |
-| 05 | Bulk File Renamer | P1 | Planned | — | — |
+| 04 | ClipKeep (Clipboard Manager) | P1 | **Testing** (pre-release out) | [clipkeep](https://github.com/Sushang-Agnihotri/clipkeep) | [v1.0.0 pre-release](https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.0.0) |
+| 05 | Bulk File Renamer | P1 | Research (next) | — | — |
 | 06 | Duplicate File Finder | P1 | Planned | — | — |
 | 07 | Image Optimizer | P2 | Planned | — | — |
 | 08 | PDF Toolkit | P2 | Planned | — | — |
@@ -145,4 +145,36 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - Repository: https://github.com/Sushang-Agnihotri/tabwise
 - Latest release: https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0
 - Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/tabwise/releases/download/v1.0.0/tabwise-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/tabwise/releases/download/v1.0.0/tabwise-1.0.0-firefox.zip)
+- Last maintenance: 2026-11-07
+
+---
+
+## 04 · ClipKeep: Clipboard History
+
+- **Stage:** Testing. v1.0.0 is published as a pre-release; it gets promoted after a hands-on check of hotkey → pick → paste.
+- **Tech:** Python 3.11, PySide6-Essentials 6.11.3 (LGPL), SQLite; PyInstaller portable build (25 MB zip, 61 MB unpacked, no installer)
+
+### Completed features
+- Text clipboard history (event-driven via Qt's clipboard-changed signal), search, pin, delete, clear, snippets
+- Global hotkey (Windows `RegisterHotKey`) with automatic fallback; paste into the previous window (`SendInput`)
+- Skips password-manager copies (Windows ExcludeClipboardContentFromMonitorProcessing / CanIncludeInClipboardHistory, KDE hint, macOS concealed type)
+- Retention by count and age, per-item size cap, pause, start at sign-in (HKCU Run), portable mode, single instance, tray
+
+### Tests
+- 22/22 automated (store, settings, hotkey parsing, and the real Qt window driven headlessly), on this PC and on the GitHub Windows runner
+- Live checks of the packaged exe on Windows 11: start (~0.5 s), records copies from other apps, skips password-manager copies, ~65 MB memory, hotkey opens window, single instance
+- Not verified automatically: keyboard focus after the hotkey, and the paste into another app. Windows blocks a background test from taking focus while a system notification is in front. Needs a hands-on check.
+
+### Findings during testing (fixed)
+- Default hotkey changed twice: Win+Shift+V is reserved by Windows 11; Alt+Shift+V triggers the input-language switch on multi-language PCs. Now Ctrl+Shift+Space.
+- The popup now claims focus explicitly when its hotkey is pressed (with the PowerToys-style fallback)
+- Removed OpenSSL and unused Qt modules from the build (−40 MB)
+
+### Known issues
+- Text only; global hotkey and auto-paste are Windows-only; unsigned exe triggers SmartScreen
+
+### Links
+- Repository: https://github.com/Sushang-Agnihotri/clipkeep
+- Pre-release: https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.0.0
+- Download: [ClipKeep-1.0.0-windows-x64.zip](https://github.com/Sushang-Agnihotri/clipkeep/releases/download/v1.0.0/ClipKeep-1.0.0-windows-x64.zip)
 - Last maintenance: 2026-11-07

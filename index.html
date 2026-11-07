@@ -84,7 +84,7 @@
     let category = 'All';
 
     function el(tag, props = {}, ...kids) { const e = document.createElement(tag); Object.assign(e, props); e.append(...kids); return e; }
-    const isAvailable = (p) => ['Published', 'Maintenance'].includes(p.status) && p.download;
+    const isAvailable = (p) => ['Published', 'Maintenance', 'Testing'].includes(p.status) && p.download;
 
     function render() {
       const term = q.value.trim().toLowerCase();
@@ -96,7 +96,7 @@
         const actions = el('div', { className: 'actions' });
         if (isAvailable(p)) actions.append(el('a', { className: 'btn primary', href: p.download, textContent: 'Download' }));
         if (p.repo && p.status !== 'Planned') actions.append(el('a', { className: 'btn', href: p.repo, textContent: 'Source code' }));
-        const status = p.status === 'Planned' ? 'Planned' : isAvailable(p) ? `v${p.version}` : `In progress · ${p.status}`;
+        const status = p.status === 'Planned' ? 'Planned' : p.status === 'Testing' ? `v${p.version} · pre-release` : isAvailable(p) ? `v${p.version}` : `In progress · ${p.status}`;
         grid.append(el('article', { className: 'card' },
           el('span', { className: `status s-${p.status.toLowerCase()}`, textContent: status }),
           el('h2', { textContent: p.name }),
@@ -119,7 +119,7 @@
 
     q.addEventListener('input', render);
     fetch('projects.json').then((r) => r.json()).then((data) => {
-      const order = { Published: 0, Maintenance: 0, Packaging: 1, Testing: 1, Development: 1, Architecture: 2, Research: 2, Planned: 3 };
+      const order = { Published: 0, Maintenance: 0, Testing: 1, Packaging: 1, Testing: 1, Development: 1, Architecture: 2, Research: 2, Planned: 3 };
       projects = data.sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9));
       renderFilters();
       render();
