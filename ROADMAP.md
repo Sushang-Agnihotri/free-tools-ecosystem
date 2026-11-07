@@ -5,10 +5,10 @@ Priorities follow the mission brief (P0 first). Each project ships only after it
 ## Now
 1. **PlainView Ad Blocker 1.0.0:** published. Next: test in real Firefox and list it in the browser stores.
 2. **QuickSkip, the YouTube Sponsor Skipper (P0):** published 7 November 2026. Next: confirm live skipping by hand, test in real Firefox, store listings.
-3. **Smart Tab Manager (P1):** next build.
+3. **Tabwise, the Smart Tab Manager (P1):** published 7 November 2026.
+4. **Universal Clipboard Manager (P1):** next build. It will be the first desktop app (Python + PySide6, Windows portable .exe).
 
 ## Next (P1)
-3. Smart Tab Manager: browser extension (tabs, tabGroups, sessions APIs)
 4. Universal Clipboard Manager: Python + PySide6 desktop app with a local SQLite history
 5. Bulk File Renamer: Python + PySide6, preview and an undo journal
 6. Duplicate File Finder: Python + PySide6, size → partial hash → full hash pipeline, deletes to the Recycle Bin only

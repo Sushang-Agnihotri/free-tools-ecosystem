@@ -8,8 +8,8 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 |---|---|---|---|---|---|
 | 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
 | 02 | QuickSkip (YouTube Sponsor Skipper) | P0 | **Published** | [quickskip-youtube](https://github.com/Sushang-Agnihotri/quickskip-youtube) | [v1.0.0](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0) |
-| 03 | Smart Tab Manager | P1 | Research (next) | — | — |
-| 04 | Universal Clipboard Manager | P1 | Planned | — | — |
+| 03 | Tabwise (Smart Tab Manager) | P1 | **Published** | [tabwise](https://github.com/Sushang-Agnihotri/tabwise) | [v1.0.0](https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0) |
+| 04 | Universal Clipboard Manager | P1 | Research (next) | — | — |
 | 05 | Bulk File Renamer | P1 | Planned | — | — |
 | 06 | Duplicate File Finder | P1 | Planned | — | — |
 | 07 | Image Optimizer | P2 | Planned | — | — |
@@ -111,4 +111,38 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - Repository: https://github.com/Sushang-Agnihotri/quickskip-youtube
 - Latest release: https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0
 - Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/download/v1.0.0/quickskip-youtube-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/download/v1.0.0/quickskip-youtube-1.0.0-firefox.zip)
+- Last maintenance: 2026-11-07
+
+---
+
+## 03 · Tabwise: Smart Tab Manager
+
+- **Stage:** Published (7 November 2026)
+- **Version:** 1.0.0
+- **Tech:** Manifest V3 extension, plain JavaScript, no runtime dependencies. Package size 23 KB.
+
+### Completed features
+- Tab search across windows with keyboard navigation and a global shortcut (Alt+Shift+T)
+- Duplicate detection (hash-insensitive by default), badge count, one-click cleanup keeping the best copy, optional switch-to-existing on open
+- Group by site, named and coloured group rules, optional automatic grouping (Chromium only; Firefox lacks the API)
+- Idle-tab suspending with native `tabs.discard` (never pinned, audible, active or excluded), plus "Suspend others"
+- Sessions: save and restore with pins and groups, lazy restore, autosave (last 5, only when changed), import and export with URL sanitising
+
+### Tests
+- Unit: 11/11 passing
+- End-to-end with real tabs in Chrome 156: 19/19 passing, stable across repeated runs
+- Firefox `web-ext lint`: 0 errors. 11 warnings, all tab-group calls, which are disabled on Firefox.
+
+### Performance
+- Event-driven, with two background alarms (idle check at most every 5 minutes; autosave every 10 minutes, writing only on change)
+- Service worker heap about 1 MB while active
+
+### Known issues
+- Suspended tabs reload on click (unsaved form text may be lost); duplicates are matched by exact URL
+- Not yet run in real Firefox
+
+### Links
+- Repository: https://github.com/Sushang-Agnihotri/tabwise
+- Latest release: https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0
+- Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/tabwise/releases/download/v1.0.0/tabwise-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/tabwise/releases/download/v1.0.0/tabwise-1.0.0-firefox.zip)
 - Last maintenance: 2026-11-07

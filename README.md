@@ -12,7 +12,7 @@ Browse the catalogue at **https://sushang-agnihotri.github.io/free-tools-ecosyst
 |---|---|---|---|---|---|---|
 | **PlainView Ad Blocker** | Blocks ads, trackers, malware hosts and cookie banners using the browser's built-in engine | Browser extension | Chrome, Edge, Brave, Firefox (experimental) | Published, v1.0.0 | [Download](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/latest) | [Source](https://github.com/Sushang-Agnihotri/plainview-adblock) |
 | **QuickSkip: Sponsor Skipper for YouTube** | Skips sponsor reads, intros and reminders inside videos (SponsorBlock data) | Browser extension | Chrome, Edge, Brave, Firefox (experimental) | Published, v1.0.0 | [Download](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/latest) | [Source](https://github.com/Sushang-Agnihotri/quickskip-youtube) |
-| Smart Tab Manager | Duplicate detection, grouping, suspension, sessions | Browser extension | Chromium, Firefox | Planned | — | — |
+| **Tabwise: Smart Tab Manager** | Tab search, duplicate cleanup, grouping, idle-tab suspending, sessions | Browser extension | Chrome, Edge, Brave, Firefox (experimental) | Published, v1.0.0 | [Download](https://github.com/Sushang-Agnihotri/tabwise/releases/latest) | [Source](https://github.com/Sushang-Agnihotri/tabwise) |
 | Universal Clipboard Manager | Local clipboard history and snippets | Desktop | Windows, macOS, Linux | Planned | — | — |
 | Bulk File Renamer | Pattern-based renaming with preview and undo | Desktop | Windows, macOS, Linux | Planned | — | — |
 | Duplicate File Finder | Hash-based duplicate detection with safe deletion | Desktop | Windows, macOS, Linux | Planned | — | — |
