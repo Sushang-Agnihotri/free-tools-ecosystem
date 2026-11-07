@@ -10,7 +10,7 @@ Browse the catalogue at **https://sushang-agnihotri.github.io/free-tools-ecosyst
 
 | Tool | What it does | Category | Platforms | Status | Download | Source |
 |---|---|---|---|---|---|---|
-| **PlainView Ad Blocker** | Blocks ads, trackers, malware hosts and cookie banners using the browser's built-in engine | Browser extension | Chrome, Edge, Brave, Firefox (experimental) | Packaging, v1.0.0 | coming soon | coming soon |
+| **PlainView Ad Blocker** | Blocks ads, trackers, malware hosts and cookie banners using the browser's built-in engine | Browser extension | Chrome, Edge, Brave, Firefox (experimental) | Published, v1.0.0 | [Download](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/latest) | [Source](https://github.com/Sushang-Agnihotri/plainview-adblock) |
 | YouTube Sponsor Skipper | Skips sponsor segments inside videos (SponsorBlock data) | Browser extension | Chrome, Edge, Brave, Firefox | Research | — | — |
 | Smart Tab Manager | Duplicate detection, grouping, suspension, sessions | Browser extension | Chromium, Firefox | Planned | — | — |
 | Universal Clipboard Manager | Local clipboard history and snippets | Desktop | Windows, macOS, Linux | Planned | — | — |

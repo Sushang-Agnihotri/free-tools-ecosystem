@@ -6,7 +6,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 
 | # | Project | Priority | Stage | Repository | Latest release |
 |---|---|---|---|---|---|
-| 01 | PlainView Ad Blocker | P0 | **Packaging** (built and tested, waiting to publish) | not published yet | not published yet |
+| 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
 | 02 | YouTube Sponsor Skipper | P0 | Research (next) | — | — |
 | 03 | Smart Tab Manager | P1 | Planned | — | — |
 | 04 | Universal Clipboard Manager | P1 | Planned | — | — |
@@ -26,7 +26,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 
 ## 01 · PlainView Ad Blocker
 
-- **Stage:** Packaging. Release packages are built, and the repository is committed locally. Publishing to GitHub is waiting on GitHub sign-in.
+- **Stage:** Published (7 November 2026). Now in maintenance: weekly filter-list releases run automatically.
 - **Version:** 1.0.0
 - **Tech:** Manifest V3 browser extension, plain JavaScript, no runtime dependencies. Build and test tools run on Node.js 20.
 
@@ -42,7 +42,6 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - GitHub Actions: CI, tagged releases, weekly filter-list releases
 
 ### Remaining
-- Publish the repository and the v1.0.0 release (needs GitHub sign-in)
 - Run the Firefox build in a real Firefox (so far it has only passed Mozilla's linter)
 - Optional, needs the owner's accounts: Chrome Web Store listing (one-time US$5 developer fee), Microsoft Edge Add-ons (free), Firefox Add-ons (free, required for a permanent Firefox install)
 - Possible later work: `$removeparam` support (would overlap with Link Cleaner), procedural cosmetic filters
@@ -64,6 +63,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - YouTube in-video ads aren't reliably blocked (documented)
 
 ### Links
-- Repository: not published yet
-- Latest release: not published yet
+- Repository: https://github.com/Sushang-Agnihotri/plainview-adblock
+- Latest release: https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0
+- Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/download/v1.0.0/plainview-adblock-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/download/v1.0.0/plainview-adblock-1.0.0-firefox.zip)
 - Last maintenance: 2026-11-07

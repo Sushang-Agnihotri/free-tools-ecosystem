@@ -3,7 +3,7 @@
 Priorities follow the mission brief (P0 first). Each project ships only after it's built, tested and documented. We don't publish placeholders.
 
 ## Now
-1. **PlainView Ad Blocker 1.0.0:** publish the repository and release, then test in real Firefox.
+1. **PlainView Ad Blocker 1.0.0:** published. Next: test in real Firefox and list it in the browser stores.
 2. **YouTube Sponsor Skipper (P0):** next build. Plan: Manifest V3 extension, SponsorBlock API using the privacy-preserving hash-prefix lookup (the first 4 characters of the SHA-256 of the video ID, so the server never learns which video you watch), auto-skip or skip-button per category, minimal content script on youtube.com only.
 
 ## Next (P1)
