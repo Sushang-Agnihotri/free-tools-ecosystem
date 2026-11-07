@@ -4,7 +4,8 @@ Priorities follow the mission brief (P0 first). Each project ships only after it
 
 ## Now
 1. **PlainView Ad Blocker 1.0.0:** published. Next: test in real Firefox and list it in the browser stores.
-2. **YouTube Sponsor Skipper (P0):** next build. Plan: Manifest V3 extension, SponsorBlock API using the privacy-preserving hash-prefix lookup (the first 4 characters of the SHA-256 of the video ID, so the server never learns which video you watch), auto-skip or skip-button per category, minimal content script on youtube.com only.
+2. **QuickSkip, the YouTube Sponsor Skipper (P0):** published 7 November 2026. Next: confirm live skipping by hand, test in real Firefox, store listings.
+3. **Smart Tab Manager (P1):** next build.
 
 ## Next (P1)
 3. Smart Tab Manager: browser extension (tabs, tabGroups, sessions APIs)

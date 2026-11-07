@@ -7,8 +7,8 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 | # | Project | Priority | Stage | Repository | Latest release |
 |---|---|---|---|---|---|
 | 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
-| 02 | YouTube Sponsor Skipper | P0 | Research (next) | — | — |
-| 03 | Smart Tab Manager | P1 | Planned | — | — |
+| 02 | QuickSkip (YouTube Sponsor Skipper) | P0 | **Published** | [quickskip-youtube](https://github.com/Sushang-Agnihotri/quickskip-youtube) | [v1.0.0](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0) |
+| 03 | Smart Tab Manager | P1 | Research (next) | — | — |
 | 04 | Universal Clipboard Manager | P1 | Planned | — | — |
 | 05 | Bulk File Renamer | P1 | Planned | — | — |
 | 06 | Duplicate File Finder | P1 | Planned | — | — |
@@ -68,4 +68,47 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - Repository: https://github.com/Sushang-Agnihotri/plainview-adblock
 - Latest release: https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0
 - Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/download/v1.0.0/plainview-adblock-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/download/v1.0.0/plainview-adblock-1.0.0-firefox.zip)
+- Last maintenance: 2026-11-07
+
+---
+
+## 02 · QuickSkip: Sponsor Skipper for YouTube
+
+- **Stage:** Published (7 November 2026)
+- **Version:** 1.0.0
+- **Tech:** Manifest V3 extension, plain JavaScript, no runtime dependencies. Package size 21 KB.
+
+### Completed features
+- SponsorBlock lookups by 4-character SHA-256 hash prefix (k-anonymity), 30-minute cache, graceful handling of 404 and server errors
+- Per-category mode: skip automatically / show a button / ignore, across all 10 SponsorBlock categories
+- Auto-skip with an Undo notice; chains back-to-back segments; jumps to the end for outros
+- Skip button mode; mute-type segments muted; "Jump to highlight" button; whole-video sponsor label
+- Coloured markers on the progress bar
+- Respects deliberate seeks into a segment; inactive while YouTube ads play
+- Handles YouTube's in-page navigation (watch, Shorts, embeds, m.youtube.com, music.youtube.com)
+- Popup with the current video's segments and time saved; settings page with an optional SponsorBlock mirror
+- Chromium and Firefox builds; CI and release workflows
+
+### Remaining
+- Confirm live skipping on youtube.com by hand (YouTube blocks playback in automated browsers)
+- Test in real Firefox; store listings (owner's accounts)
+
+### Tests
+- Unit: 8/8 passing
+- End-to-end (Chrome 156, local HTTPS mock of YouTube plus mock SponsorBlock API): 17/17 passing. Covers hash-prefix privacy, auto-skip timing (no frames played inside the segment), Undo, button mode, statistics, deliberate seeks, ad pause and resume, popup, in-page navigation, missing data, server errors, and the off switch.
+- Live YouTube: video detection, API lookup and progress-bar markers confirmed on the real site. Playback is blocked by YouTube in automated browsers.
+- Firefox `web-ext lint`: 0 errors, 0 warnings
+
+### Performance
+- No polling: event-driven, with a single timer for the next segment boundary
+- Test session: about 5 ms of total script time; page JS heap about 4 MB
+
+### Known issues
+- Segment coverage depends on SponsorBlock volunteers
+- No segment submission or voting (by design; the official SponsorBlock extension does this)
+
+### Links
+- Repository: https://github.com/Sushang-Agnihotri/quickskip-youtube
+- Latest release: https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0
+- Downloads: [Chromium zip](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/download/v1.0.0/quickskip-youtube-1.0.0-chromium.zip) · [Firefox zip](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/download/v1.0.0/quickskip-youtube-1.0.0-firefox.zip)
 - Last maintenance: 2026-11-07

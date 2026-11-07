@@ -14,12 +14,16 @@
   },
   {
     "id": "youtube-sponsor-skipper",
-    "name": "YouTube Sponsor Skipper",
+    "name": "QuickSkip: Sponsor Skipper for YouTube",
     "tagline": "Skips sponsored segments, intros and reminders inside YouTube videos using SponsorBlock community data.",
     "category": "Browser extension",
-    "tags": ["video", "time-saver"],
-    "platforms": ["Chrome", "Edge", "Brave", "Firefox"],
-    "status": "Research"
+    "tags": ["video", "time-saver", "privacy"],
+    "platforms": ["Chrome", "Edge", "Brave", "Firefox (experimental)"],
+    "status": "Published",
+    "version": "1.0.0",
+    "repo": "https://github.com/Sushang-Agnihotri/quickskip-youtube",
+    "download": "https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/latest",
+    "install": "Download the chromium zip, unzip, open chrome://extensions, enable Developer mode, click Load unpacked."
   },
   { "id": "smart-tab-manager", "name": "Smart Tab Manager", "tagline": "Finds duplicate tabs, groups and suspends tabs, restores sessions.", "category": "Browser extension", "tags": ["productivity"], "platforms": ["Chrome", "Edge", "Brave", "Firefox"], "status": "Planned" },
   { "id": "clipboard-manager", "name": "Universal Clipboard Manager", "tagline": "Local, searchable clipboard history with pinned snippets.", "category": "Desktop app", "tags": ["productivity"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
