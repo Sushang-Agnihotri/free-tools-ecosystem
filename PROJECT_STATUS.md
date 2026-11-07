@@ -42,6 +42,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - GitHub Actions: CI, tagged releases, weekly filter-list releases
 
 ### Remaining
+- First automated weekly filter release runs Monday 10 November 2026; watch that it succeeds
 - Run the Firefox build in a real Firefox (so far it has only passed Mozilla's linter)
 - Optional, needs the owner's accounts: Chrome Web Store listing (one-time US$5 developer fee), Microsoft Edge Add-ons (free), Firefox Add-ons (free, required for a permanent Firefox install)
 - Possible later work: `$removeparam` support (would overlap with Link Cleaner), procedural cosmetic filters
@@ -49,6 +50,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 ### Tests
 - Unit: 25/25 passing (`npm test`)
 - End-to-end in Chrome 156: 21/21 passing (`npm run test:e2e`). Covers network blocking, on-demand, always-on and site-specific hiding, elements added after load, list exceptions, custom filters, pop-up closing, per-site disable, pause, list toggles, and the popup counter.
+- GitHub Actions CI (Ubuntu, latest Chrome): 21/21 end-to-end checks passing
 - Firefox: `web-ext lint`, 0 errors. Three warnings, all expected: two APIs Firefox lacks (guarded in code), and a coin-miner false positive because the tracker list blocks coin-miner domains by name.
 - `npm audit --omit=dev`: 0 vulnerabilities (no runtime dependencies)
 
