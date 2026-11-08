@@ -77,10 +77,10 @@
       "Windows 10/11",
       "macOS & Linux (from source)"
     ],
-    "status": "Testing",
+    "status": "Published",
     "version": "1.1.0",
     "repo": "https://github.com/Sushang-Agnihotri/clipkeep",
-    "download": "https://github.com/Sushang-Agnihotri/clipkeep/releases",
+    "download": "https://github.com/Sushang-Agnihotri/clipkeep/releases/latest",
     "install": "Download the zip, unzip, run ClipKeep.exe. No installer needed."
   },
   {

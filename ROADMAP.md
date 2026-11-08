@@ -6,7 +6,7 @@ Priorities follow the mission brief (P0 first). Each project ships only after it
 1. **PlainView Ad Blocker 1.0.0:** published. Next: test in real Firefox and list it in the browser stores.
 2. **QuickSkip, the YouTube Sponsor Skipper (P0):** published 7 November 2026. Next: confirm live skipping by hand, test in real Firefox, store listings.
 3. **Tabwise, the Smart Tab Manager (P1):** published 7 November 2026.
-4. **ClipKeep, the clipboard manager (P1):** pre-release published 7 November 2026; full release after a hands-on paste check.
+4. **ClipKeep, the clipboard manager (P1):** 1.1.0 published 8 November 2026, with floating Copy/Paste buttons. Possible next step: free code signing (SignPath Foundation) to remove the SmartScreen warning.
 5. **Bulk File Renamer (P1):** next build, reusing ClipKeep's PySide6 + PyInstaller pipeline.
 
 ## Next (P1)

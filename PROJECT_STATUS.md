@@ -9,7 +9,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 | 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
 | 02 | QuickSkip (YouTube Sponsor Skipper) | P0 | **Published** | [quickskip-youtube](https://github.com/Sushang-Agnihotri/quickskip-youtube) | [v1.0.0](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0) |
 | 03 | Tabwise (Smart Tab Manager) | P1 | **Published** | [tabwise](https://github.com/Sushang-Agnihotri/tabwise) | [v1.0.0](https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0) |
-| 04 | ClipKeep (Clipboard Manager) | P1 | **Testing** (pre-release out) | [clipkeep](https://github.com/Sushang-Agnihotri/clipkeep) | [v1.1.0 pre-release](https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.1.0) |
+| 04 | ClipKeep (Clipboard Manager) | P1 | **Published** | [clipkeep](https://github.com/Sushang-Agnihotri/clipkeep) | [v1.1.0](https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.1.0) |
 | 05 | Bulk File Renamer | P1 | Research (next) | — | — |
 | 06 | Duplicate File Finder | P1 | Planned | — | — |
 | 07 | Image Optimizer | P2 | Planned | — | — |
@@ -151,7 +151,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 
 ## 04 · ClipKeep: Clipboard History
 
-- **Stage:** Testing. v1.0.0 is published as a pre-release; it gets promoted after a hands-on check of hotkey → pick → paste.
+- **Stage:** Published. v1.1.0 is the latest release (8 November 2026), after the floating Copy/Paste buttons were confirmed working by hand in real apps on Windows 11. v1.0.0 stays marked as a pre-release.
 - **Tech:** Python 3.11, PySide6-Essentials 6.11.3 (LGPL), SQLite; PyInstaller portable build (25 MB zip, 61 MB unpacked, no installer)
 
 ### Completed features
