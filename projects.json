@@ -4,8 +4,17 @@
     "name": "PlainView Ad Blocker",
     "tagline": "Blocks ads, trackers, malware hosts and cookie banners using the browser's built-in engine.",
     "category": "Browser extension",
-    "tags": ["privacy", "ads", "security"],
-    "platforms": ["Chrome", "Edge", "Brave", "Firefox (experimental)"],
+    "tags": [
+      "privacy",
+      "ads",
+      "security"
+    ],
+    "platforms": [
+      "Chrome",
+      "Edge",
+      "Brave",
+      "Firefox (experimental)"
+    ],
     "status": "Published",
     "version": "1.0.0",
     "repo": "https://github.com/Sushang-Agnihotri/plainview-adblock",
@@ -17,8 +26,17 @@
     "name": "QuickSkip: Sponsor Skipper for YouTube",
     "tagline": "Skips sponsored segments, intros and reminders inside YouTube videos using SponsorBlock community data.",
     "category": "Browser extension",
-    "tags": ["video", "time-saver", "privacy"],
-    "platforms": ["Chrome", "Edge", "Brave", "Firefox (experimental)"],
+    "tags": [
+      "video",
+      "time-saver",
+      "privacy"
+    ],
+    "platforms": [
+      "Chrome",
+      "Edge",
+      "Brave",
+      "Firefox (experimental)"
+    ],
     "status": "Published",
     "version": "1.0.0",
     "repo": "https://github.com/Sushang-Agnihotri/quickskip-youtube",
@@ -30,8 +48,16 @@
     "name": "Tabwise: Smart Tab Manager",
     "tagline": "Search all your tabs, close duplicates, group by site, suspend idle tabs and save sessions.",
     "category": "Browser extension",
-    "tags": ["productivity", "memory"],
-    "platforms": ["Chrome", "Edge", "Brave", "Firefox (experimental)"],
+    "tags": [
+      "productivity",
+      "memory"
+    ],
+    "platforms": [
+      "Chrome",
+      "Edge",
+      "Brave",
+      "Firefox (experimental)"
+    ],
     "status": "Published",
     "version": "1.0.0",
     "repo": "https://github.com/Sushang-Agnihotri/tabwise",
@@ -41,25 +67,187 @@
   {
     "id": "clipkeep",
     "name": "ClipKeep: Clipboard History",
-    "tagline": "Private clipboard history: search, pin, snippets, paste in two keystrokes. Skips passwords.",
+    "tagline": "Private clipboard history plus floating Copy/Paste buttons on top of every window. Skips passwords.",
     "category": "Desktop app",
-    "tags": ["productivity", "privacy"],
-    "platforms": ["Windows 10/11", "macOS & Linux (from source)"],
+    "tags": [
+      "productivity",
+      "privacy"
+    ],
+    "platforms": [
+      "Windows 10/11",
+      "macOS & Linux (from source)"
+    ],
     "status": "Testing",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repo": "https://github.com/Sushang-Agnihotri/clipkeep",
     "download": "https://github.com/Sushang-Agnihotri/clipkeep/releases",
     "install": "Download the zip, unzip, run ClipKeep.exe. No installer needed."
   },
-  { "id": "bulk-file-renamer", "name": "Bulk File Renamer", "tagline": "Rename hundreds of files with patterns, numbering and dates, with preview and undo.", "category": "Desktop app", "tags": ["files"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "duplicate-file-finder", "name": "Duplicate File Finder", "tagline": "Find duplicate files by content hash and remove them safely.", "category": "Desktop app", "tags": ["files"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "image-optimizer", "name": "Image Optimizer", "tagline": "Compress, convert and resize images in bulk, offline.", "category": "Desktop app", "tags": ["images", "files"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "pdf-toolkit", "name": "PDF Toolkit", "tagline": "Merge, split, rotate, reorder and compress PDFs locally.", "category": "Desktop app", "tags": ["documents"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "download-organizer", "name": "Download Organizer", "tagline": "Sorts your Downloads folder automatically with custom rules.", "category": "Desktop app", "tags": ["files"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "link-cleaner", "name": "Link Cleaner", "tagline": "Strips tracking parameters from links you copy and open.", "category": "Browser extension", "tags": ["privacy"], "platforms": ["Chrome", "Edge", "Brave", "Firefox"], "status": "Planned" },
-  { "id": "metadata-cleaner", "name": "Metadata Cleaner", "tagline": "Removes GPS and other hidden metadata from photos and documents.", "category": "Desktop app", "tags": ["privacy", "images"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" },
-  { "id": "website-change-monitor", "name": "Website Change Monitor", "tagline": "Watches pages and prices for changes, politely.", "category": "Browser extension", "tags": ["productivity"], "platforms": ["Chrome", "Edge", "Brave", "Firefox"], "status": "Planned" },
-  { "id": "screenshot-privacy-tool", "name": "Screenshot Privacy Tool", "tagline": "Capture screenshots and blur emails, phone numbers and other sensitive details.", "category": "Desktop app", "tags": ["privacy", "images"], "platforms": ["Windows"], "status": "Planned" },
-  { "id": "bulk-text-formatter", "name": "Bulk Text Formatter", "tagline": "Dedupe lines, fix spacing and case, extract emails and URLs.", "category": "Web app", "tags": ["productivity"], "platforms": ["Any browser"], "status": "Planned" },
-  { "id": "transcriber", "name": "Video & Audio Transcriber", "tagline": "Local speech-to-text with SRT and VTT subtitle export.", "category": "Desktop app", "tags": ["video", "audio"], "platforms": ["Windows", "macOS", "Linux"], "status": "Planned" }
+  {
+    "id": "bulk-file-renamer",
+    "name": "Bulk File Renamer",
+    "tagline": "Rename hundreds of files with patterns, numbering and dates, with preview and undo.",
+    "category": "Desktop app",
+    "tags": [
+      "files"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "duplicate-file-finder",
+    "name": "Duplicate File Finder",
+    "tagline": "Find duplicate files by content hash and remove them safely.",
+    "category": "Desktop app",
+    "tags": [
+      "files"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "image-optimizer",
+    "name": "Image Optimizer",
+    "tagline": "Compress, convert and resize images in bulk, offline.",
+    "category": "Desktop app",
+    "tags": [
+      "images",
+      "files"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "pdf-toolkit",
+    "name": "PDF Toolkit",
+    "tagline": "Merge, split, rotate, reorder and compress PDFs locally.",
+    "category": "Desktop app",
+    "tags": [
+      "documents"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "download-organizer",
+    "name": "Download Organizer",
+    "tagline": "Sorts your Downloads folder automatically with custom rules.",
+    "category": "Desktop app",
+    "tags": [
+      "files"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "link-cleaner",
+    "name": "Link Cleaner",
+    "tagline": "Strips tracking parameters from links you copy and open.",
+    "category": "Browser extension",
+    "tags": [
+      "privacy"
+    ],
+    "platforms": [
+      "Chrome",
+      "Edge",
+      "Brave",
+      "Firefox"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "metadata-cleaner",
+    "name": "Metadata Cleaner",
+    "tagline": "Removes GPS and other hidden metadata from photos and documents.",
+    "category": "Desktop app",
+    "tags": [
+      "privacy",
+      "images"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "website-change-monitor",
+    "name": "Website Change Monitor",
+    "tagline": "Watches pages and prices for changes, politely.",
+    "category": "Browser extension",
+    "tags": [
+      "productivity"
+    ],
+    "platforms": [
+      "Chrome",
+      "Edge",
+      "Brave",
+      "Firefox"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "screenshot-privacy-tool",
+    "name": "Screenshot Privacy Tool",
+    "tagline": "Capture screenshots and blur emails, phone numbers and other sensitive details.",
+    "category": "Desktop app",
+    "tags": [
+      "privacy",
+      "images"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "bulk-text-formatter",
+    "name": "Bulk Text Formatter",
+    "tagline": "Dedupe lines, fix spacing and case, extract emails and URLs.",
+    "category": "Web app",
+    "tags": [
+      "productivity"
+    ],
+    "platforms": [
+      "Any browser"
+    ],
+    "status": "Planned"
+  },
+  {
+    "id": "transcriber",
+    "name": "Video & Audio Transcriber",
+    "tagline": "Local speech-to-text with SRT and VTT subtitle export.",
+    "category": "Desktop app",
+    "tags": [
+      "video",
+      "audio"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "status": "Planned"
+  }
 ]

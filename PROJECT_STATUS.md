@@ -9,7 +9,7 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 | 01 | PlainView Ad Blocker | P0 | **Published** | [plainview-adblock](https://github.com/Sushang-Agnihotri/plainview-adblock) | [v1.0.0](https://github.com/Sushang-Agnihotri/plainview-adblock/releases/tag/v1.0.0) |
 | 02 | QuickSkip (YouTube Sponsor Skipper) | P0 | **Published** | [quickskip-youtube](https://github.com/Sushang-Agnihotri/quickskip-youtube) | [v1.0.0](https://github.com/Sushang-Agnihotri/quickskip-youtube/releases/tag/v1.0.0) |
 | 03 | Tabwise (Smart Tab Manager) | P1 | **Published** | [tabwise](https://github.com/Sushang-Agnihotri/tabwise) | [v1.0.0](https://github.com/Sushang-Agnihotri/tabwise/releases/tag/v1.0.0) |
-| 04 | ClipKeep (Clipboard Manager) | P1 | **Testing** (pre-release out) | [clipkeep](https://github.com/Sushang-Agnihotri/clipkeep) | [v1.0.0 pre-release](https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.0.0) |
+| 04 | ClipKeep (Clipboard Manager) | P1 | **Testing** (pre-release out) | [clipkeep](https://github.com/Sushang-Agnihotri/clipkeep) | [v1.1.0 pre-release](https://github.com/Sushang-Agnihotri/clipkeep/releases/tag/v1.1.0) |
 | 05 | Bulk File Renamer | P1 | Research (next) | — | — |
 | 06 | Duplicate File Finder | P1 | Planned | — | — |
 | 07 | Image Optimizer | P2 | Planned | — | — |
@@ -170,8 +170,13 @@ Stages: Research → Architecture → Development → Testing → Packaging → 
 - The popup now claims focus explicitly when its hotkey is pressed (with the PowerToys-style fallback)
 - Removed OpenSSL and unused Qt modules from the build (−40 MB)
 
+### 1.1.0 (8 November 2026): floating Copy/Paste buttons
+- Always-on-top no-activate bar with Copy, Paste, optional Cut and a history button, draggable with remembered position
+- Tests: 29/29 automated; live on Windows 11: bar appears in 0.9 s, topmost, WS_EX_NOACTIVATE set, clicking it leaves the foreground window unchanged (6/6)
+- User feedback on 1.0.0: SmartScreen blocked the first launch. The README and release notes now explain More info → Run anyway and Unblock. Free code signing (SignPath Foundation) is a possible follow-up.
+
 ### Known issues
-- Text only; global hotkey and auto-paste are Windows-only; unsigned exe triggers SmartScreen
+- Text only; global hotkey, auto-paste and floating buttons are Windows-only; unsigned exe triggers SmartScreen
 
 ### Links
 - Repository: https://github.com/Sushang-Agnihotri/clipkeep
